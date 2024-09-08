@@ -1,5 +1,6 @@
 Rock-Paper-Scissors Game
-Overview: The Rock-Paper-Scissors game is a classic hand game played between two people. Each player simultaneously forms one of three shapes (rock, paper, or scissors) with their hand. The winner is determined by the rules:
+Overview: 
+The Rock-Paper-Scissors game is a classic hand game played between two people. Each player simultaneously forms one of three shapes (rock, paper, or scissors) with their hand. The winner is determined by the rules:
 
 Rock crushes Scissors
 Scissors cuts Paper
