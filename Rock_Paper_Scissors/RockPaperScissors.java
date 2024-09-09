@@ -1,4 +1,4 @@
-package Mini_Projects;
+package Mini_Projects.Rock_Paper_Scissors;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -16,11 +16,28 @@ public class RockPaperScissors {
         Scanner sc=new Scanner(System.in);
         int p1count=0,p2count=0;
         while(true){
-            System.out.println("Type one from the  below: \n1.Rock\t2.Paper\t3.Scissor");
+            System.out.println("choose one from the  below: \n 1 for Rock\t2 for Paper\t3 for Scissor");
             System.out.println("Player 1 Enter: ");
-            String p1=sc.nextLine().toLowerCase().trim();
+            int pi1=sc.nextInt();
             System.out.println("Player 2 Enter: ");
-            String p2=sc.nextLine().toLowerCase().trim();
+            int pi2=sc.nextInt();
+            if((1>pi1 || pi1<3) || (1>pi2 || pi2<3)) {
+                System.out.println("Enter from above options only");
+                continue;
+            }
+            String p1 = switch (pi1) {
+                case 1 -> "rock";
+                case 2 -> "paper";
+                case 3 -> "scissor";
+                default -> "nothing";
+            };
+            String p2 = switch (pi2) {
+                case 1 -> "rock";
+                case 2 -> "paper";
+                case 3 -> "scissor";
+                default -> "nothing";
+            };
+
             if((p1.equals("scissor") && p2.equals("rock") )|| (p1.equals("paper") && p2.equals("scissor")) || (p1.equals("rock") && p2.equals("paper")) ){
                 p2count++;
             }
@@ -43,9 +60,19 @@ public class RockPaperScissors {
         int p1count=0,p2count=0;
         String p2="";
         while(true){
-            System.out.println("Type one from the  below: \n1.Rock\t2.Paper\t3.Scissor");
-            System.out.println("Player 1 Enter: ");
-            String p1=sc.nextLine().toLowerCase().trim();
+            System.out.println("choose one from the  below: \n 1 for Rock\t2 for Paper\t3 for Scissor");
+            System.out.println("Player Enter: ");
+            int pi1=sc.nextInt();
+            if((1>pi1 || pi1<3)) {
+                System.out.println("Enter from above options only");
+                continue;
+            }
+            String p1 = switch (pi1) {
+                case 1 -> "rock";
+                case 2 -> "paper";
+                case 3 -> "scissor";
+                default -> "nothing";
+            };
         int random=rand.nextInt(3)+1;
             p2 = switch (random) {
                 case 1 -> "rock";
