@@ -47,14 +47,12 @@ public class RockPaperScissors {
             System.out.println("Player 1 Enter: ");
             String p1=sc.nextLine().toLowerCase().trim();
         int random=rand.nextInt(3)+1;
-        switch (random){
-            case 1: p2="rock";
-                    break;
-            case 2: p2="paper";
-                    break;
-            case 3: p2="scissor";
-                    break;
-        }
+            p2 = switch (random) {
+                case 1 -> "rock";
+                case 2 -> "paper";
+                case 3 -> "scissor";
+                default -> p2;
+            };
             if((p1.equals("scissor") && p2.equals("rock") )|| (p1.equals("paper") && p2.equals("scissor")) || (p1.equals("rock") && p2.equals("paper")) ){
                 p2count++;
             }
