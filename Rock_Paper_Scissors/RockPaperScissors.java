@@ -16,12 +16,12 @@ public class RockPaperScissors {
         Scanner sc=new Scanner(System.in);
         int p1count=0,p2count=0;
         while(true){
-            System.out.println("choose one from the  below: \n 1 for Rock\t2 for Paper\t3 for Scissor");
+            System.out.println("choose one from the  below: \n1 for Rock\t2 for Paper\t3 for Scissor");
             System.out.println("Player 1 Enter: ");
             int pi1=sc.nextInt();
             System.out.println("Player 2 Enter: ");
             int pi2=sc.nextInt();
-            if((1>pi1 || pi1<3) || (1>pi2 || pi2<3)) {
+            if((1>pi1 || pi1>3) || (1>pi2 || pi2>3)) {
                 System.out.println("Enter from above options only");
                 continue;
             }
@@ -60,10 +60,10 @@ public class RockPaperScissors {
         int p1count=0,p2count=0;
         String p2="";
         while(true){
-            System.out.println("choose one from the  below: \n 1 for Rock\t2 for Paper\t3 for Scissor");
+            System.out.println("choose one from the  below: \n1 for Rock\t2 for Paper\t3 for Scissor");
             System.out.println("Player Enter: ");
             int pi1=sc.nextInt();
-            if((1>pi1 || pi1<3)) {
+            if((0>=pi1 || pi1>=4)) {
                 System.out.println("Enter from above options only");
                 continue;
             }
