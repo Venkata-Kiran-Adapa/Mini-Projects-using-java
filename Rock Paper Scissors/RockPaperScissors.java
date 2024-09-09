@@ -21,22 +21,10 @@ public class RockPaperScissors {
             String p1=sc.nextLine().toLowerCase().trim();
             System.out.println("Player 2 Enter: ");
             String p2=sc.nextLine().toLowerCase().trim();
-            if(p1.equals("rock") && p2.equals("paper")) {
+            if((p1.equals("scissor") && p2.equals("rock") )|| (p1.equals("paper") && p2.equals("scissor")) || (p1.equals("rock") && p2.equals("paper")) ){
                 p2count++;
             }
-            else if(p1.equals("scissor") && p2.equals("rock")){
-                p2count++;
-            }
-            else if (p1.equals("paper") && p2.equals("scissor")){
-                p2count++;
-            }
-            else if (p1.equals("paper") && p2.equals("rock")){
-                p1count++;
-            }
-            else if (p1.equals("rock") && p2.equals("scissor")){
-                p1count++;
-            }
-            else if(p1.equals("scissor") && p2.equals("paper")){
+            else if((p1.equals("paper") && p2.equals("rock")) || (p1.equals("rock") && p2.equals("scissor")) ||(p1.equals("scissor") && p2.equals("paper"))){
                 p1count++;
             }
             if(p1count==3){
@@ -67,22 +55,10 @@ public class RockPaperScissors {
             case 3: p2="scissor";
                     break;
         }
-            if(p1.equals("rock") && p2.equals("paper")) {
+            if((p1.equals("scissor") && p2.equals("rock") )|| (p1.equals("paper") && p2.equals("scissor")) || (p1.equals("rock") && p2.equals("paper")) ){
                 p2count++;
             }
-            else if(p1.equals("scissor") && p2.equals("rock")){
-                p2count++;
-            }
-            else if (p1.equals("paper") && p2.equals("scissor")){
-                p2count++;
-            }
-            else if (p1.equals("paper") && p2.equals("rock")){
-                p1count++;
-            }
-            else if (p1.equals("rock") && p2.equals("scissor")){
-                p1count++;
-            }
-            else if(p1.equals("scissor") && p2.equals("paper")){
+            else if((p1.equals("paper") && p2.equals("rock")) || (p1.equals("rock") && p2.equals("scissor")) ||(p1.equals("scissor") && p2.equals("paper"))){
                 p1count++;
             }
             if(p1count==3){
